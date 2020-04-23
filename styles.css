@@ -7,6 +7,8 @@ body {
   margin: 0;
   --dark: #23424a;
   --light: #38cfd9;
+  --middle: #136c72;
+  --accent: #87629a;
   font-family: 'Roboto', sans-serif;
   color: var(--dark);
   font-size: 1rem;
@@ -58,12 +60,23 @@ a:hover, a:focus {
   opacity: 70%;
 }
 
-.row {
-  justify-content: space-between;
-  flex-wrap: wrap;
+.package h2, .package p {
+  text-align: center;
+}
+.package {
+  min-width: 200px;
+  }
+
+.package + .package {
+  margin-left: 5em;
 }
 
-.package {
-  margin-right: 3em;
-  min-width: 200px;
+.functions {
+  background-color: var(--middle);
+  padding: 4rem 0;
+  color: white;
+}
+
+.row h2 {
+  color: var(--accent);
 }
