@@ -14,6 +14,9 @@ body {
   font-size: 1rem;
 }
 
+img {
+  max-width: 100%;
+}
 .hero {
   margin: 0;
   padding: 2em 0;
@@ -26,12 +29,24 @@ body {
   width: 80%;
   border: 1px solid yellow;
   display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
   }
 
 .herotext {
-  margin: 2em 0;
-  width: 70%;
+  width: 60%;
   max-width: 500px;
+  }
+
+.hero-img {
+  width: 30%;
+  align-self: flex-start;
+  border: solid 2px pink;
+  text-align: right;
+}
+
+.img {
+  width: 100%;
 }
 
 h1 {
@@ -40,7 +55,11 @@ h1 {
 }
 
 p {
-  margin-bottom: 3em;
+  margin-bottom: 2em;
+}
+
+.herotext p {
+  margin-bottom: 4em;
 }
 
 .abutton {
@@ -50,7 +69,7 @@ p {
   border: none;
   font-weight: bold;
   border-radius: 2em;
-}
+  }
 
 a, a:hover, a:focus {
   text-decoration: none;
@@ -60,23 +79,38 @@ a:hover, a:focus {
   opacity: 70%;
 }
 
-.package h2, .package p {
-  text-align: center;
-}
-.package {
-  min-width: 200px;
-  }
+/*
+////// For this challenge ///////
 
-.package + .package {
-  margin-left: 5em;
+- All text is in the JS section
+  this pen
+- Use this code for the image
+  (not the same image!)
+  <img src="https://unsplash.it/386/292" alt="">
+
+// Requirements
+1. Refer to the design specs for the
+   overall layout
+2. The image should line up with
+   the sidebar in the section
+   below
+
+*/
+
+
+.main {
+  margin-right: 5%;
+  width: 60%
 }
 
-.functions {
+.main h2 {
+  color: var(--middle);
+}
+
+.wrap-column {
+  width: 32%;
   background-color: var(--middle);
-  padding: 4rem 0;
   color: white;
-}
-
-.row h2 {
-  color: var(--accent);
+  padding: 2em;
+  text-align: center;
 }
