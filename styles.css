@@ -37,6 +37,12 @@ p {
 }
 
 /* ========= NAVIGATION ========= */
+header {
+  margin: 0;
+  background-color: var(--dark);
+  color: white;
+}
+
 nav {
   width: 100%;
   padding: 1em 10%;
@@ -73,11 +79,7 @@ nav li {
 }
 
 /* ========= HEADER ========= */
-header {
-  margin: 0;
-  background-color: var(--dark);
-  color: white;
-}
+
 
 .herotext {
   width: 60%;
@@ -115,6 +117,9 @@ a:hover, a:focus {
   opacity: 70%;
 }
 
+.nav-butt a {
+  color: var(--middle);
+}
 /*
 ////// For this challenge ///////
 
@@ -148,4 +153,24 @@ a:hover, a:focus {
   color: white;
   padding: 2em;
   text-align: center;
+}
+
+
+/* ========= MEDIA QUERY ============== */
+
+@media (max-width: 600px) {
+.wrap {
+  display: block;
+}
+
+.herotext,
+.hero-img,
+.main,
+.wrap-column {
+  width: 100%;
+}
+
+.hero-img {
+  margin-top: 4rem;
+}
 }
