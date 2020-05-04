@@ -31,71 +31,68 @@ p {
   margin: 0 10vw;
   padding: 2em 0;
   width: 80%;
-  border: 1px solid yellow;
+  /*border: 1px solid yellow;*/
   display: flex;
   justify-content: space-between;
 }
 
 /* ========= NAVIGATION ========= */
-      /* ========= HAMBURGER ========= */
-
+/* ========= HAMBURGER ========= */
 .nav-lists {
   display: flex;
   justify-content: space-between;
 }
 
 .nav-toggle {
-    cursor: pointer;
-    border: 0;
-    width: 3em;
-    height: 3em;
-    padding: 0em;
-    border-radius: 50%;
-    background: #072A2D;
-    color: white;
-    transition: opacity 250ms ease;
-    position: absolute;
-    left: 0;
-    margin-left: 2vw;
-    display: none;
+  cursor: pointer;
+  border: 0;
+  width: 3em;
+  height: 3em;
+  padding: 0em;
+  border-radius: 50%;
+  background: #072A2D;
+  color: white;
+  transition: opacity 250ms ease;
+  position: absolute;
+  left: 0;
+  margin-left: 2vw;
+  display: none;
 }
 
 .nav-toggle:focus,
 .nav-toggle:hover {
-    opacity: .75;
+  opacity: .75;
 }
 
 .hamburger {
-    width: 50%;
-    position: relative;
+  width: 50%;
+  position: relative;
 }
 
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-    display: block;
-    margin: 0 auto;
-    height: 3px;
-    background: white;
+  display: block;
+  margin: 0 auto;
+  height: 3px;
+  background: white;
 }
 
 .hamburger::before,
 .hamburger::after {
-    content: '';
-    width: 100%;
+  content: '';
+  width: 100%;
 }
 
 .hamburger::before {
-    transform: translateY(-6px);
+  transform: translateY(-6px);
 }
 
 .hamburger::after {
-    transform: translateY(3px);
+  transform: translateY(3px);
 }
 
-
-      /* ========= NAVIGATION ========= */
-
+/* ========= NAVIGATION ========= */
 header {
   margin: 0;
   background-color: var(--dark);
@@ -117,7 +114,7 @@ nav {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  border: solid 2px red;
+  /*border: solid 2px red;*/
 }
 
 .nav-logo {
@@ -134,7 +131,7 @@ nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  border: 1px solid pink;
+  /*border: 1px solid pink;*/
 }
 
 nav li {
@@ -151,12 +148,10 @@ nav li {
 
 nav .wrap {
   width: 100%;
-  margin:0;
+  margin: 0;
 }
 
 /* ========= HEADER ========= */
-
-
 .herotext {
   width: 60%;
   max-width: 500px;
@@ -165,7 +160,7 @@ nav .wrap {
 .hero-img {
   width: 32%;
   align-self: flex-start;
-  border: solid 2px pink;
+  /*border: solid 2px pink;*/
   text-align: right;
 }
 
@@ -196,6 +191,7 @@ a:hover, a:focus {
 .nav-butt a {
   color: var(--middle);
 }
+
 /*
 ////// For this challenge ///////
 
@@ -231,51 +227,45 @@ a:hover, a:focus {
   text-align: center;
 }
 
-
 /* ========= MEDIA QUERY ============== */
-
 @media (max-width: 600px) {
-.wrap {
-  display: block;
-}
+  .wrap {
+    display: block;
+  }
 
-.herotext,
-.hero-img,
-.main,
-.wrap-column {
-  width: 100%;
-}
+  .herotext,
+  .hero-img,
+  .main,
+  .wrap-column {
+    width: 100%;
+  }
 
-.hero-img {
-  margin-top: 4rem;
-}
+  .hero-img {
+    margin-top: 4rem;
+  }
 
-/* ========= NAVIGATION MEDIA QUERY ============== */
+  /* ========= NAVIGATION MEDIA QUERY ============== */
+  .nav-toggle {
+    display: block;
+  }
 
-.nav-toggle {
-  display: block;
-}
+  .nav-wrap {
+    display: block;
+  }
 
-.nav-wrap {
-  display: block;
-}
+  nav ul, nav li, .nav-lists {
+    display: block;
+  }
 
-nav ul, nav li, .nav-lists {
-  display: block;
-}
+  nav {
+    align-items: flex-start;
+  }
 
-nav {
-  align-items: flex-start;
-}
+  nav li {
+    margin: 1em auto;
+  }
 
-nav li {
-  margin: 1em auto;
-}
-
-.hidden {
-  display: none;
-}
-
-
-
+  .hidden {
+    display: none;
+  }
 }
